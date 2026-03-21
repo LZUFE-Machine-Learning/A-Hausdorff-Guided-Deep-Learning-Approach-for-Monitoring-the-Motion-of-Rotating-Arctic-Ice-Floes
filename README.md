@@ -12,12 +12,6 @@ Key Laboratory of Cryospheric Science and Frozen Soil Engineering,
 Heihe Remote Sensing Experimental Research Station,  
 Northwest Institute of Eco-Environment and Resources,  
 Chinese Academy of Sciences, Lanzhou, China  
-
----
-
-## 📄 Paper
-[**A Hausdorff-Guided Deep Learning Approach for Motion Monitoring of Rotating Arctic Ice Floes**](https://ieeexplore.ieee.org/document/9627165)
-
 ---
 
 ## 🧭 Framework Overview
@@ -50,7 +44,7 @@ https://github.com/RouteViewLab/A-Hausdorff-Guided-Deep-Learning-Approach-for-Mo
 
 ### 📈 Quantitative Analysis
 
-![HD vs Rotation Angle](https://github.com/RouteViewLab/A-Hausdorff-Guided-Deep-Learning-Approach-for-Monitoring-the-Motion-of-Rotating-Arctic-Ice-Floes/raw/main/Rotation Comparison Chart.png)
+![HD vs Rotation Angle](https://raw.githubusercontent.com/LZUFE-Machine-Learning/A-Hausdorff-Guided-Deep-Learning-Approach-for-Monitoring-the-Motion-of-Rotating-Arctic-Ice-Floes/main/Variation%20of%20Hausdorff%20Distance%20with%20Rotation%20Angle.png))
 
 This figure shows the variation of **Hausdorff Distance (HD)** with respect to rotation angle for ice floe **B2**.
 
@@ -65,7 +59,7 @@ Rotation drastically alters geometric similarity, making direct matching unrelia
 
 ### 🖼️ Qualitative Comparison
 
-![Rotation Comparison](https://github.com/RouteViewLab/A-Hausdorff-Guided-Deep-Learning-Approach-for-Monitoring-the-Motion-of-Rotating-Arctic-Ice-Floes/raw/main/Variation of Hausdorff Distance with Rotation Angle.png)
+![Rotation Comparison](https://raw.githubusercontent.com/LZUFE-Machine-Learning/A-Hausdorff-Guided-Deep-Learning-Approach-for-Monitoring-the-Motion-of-Rotating-Arctic-Ice-Floes/main/Rotation%20Comparison%20Chart.png)
 
 #### 🔹 Before Rotation Alignment
 - Feature matches are **disordered and inconsistent**  
@@ -113,8 +107,8 @@ python train4.py train_joint configs/superpoint_dataset_train_heatmap.yaml super
 
 python train.py --feature_dim 256 --dataset_offline_rebuild 1 --batch_size 32 --eval
 
-
-  ## Results
+---
+## Results
 
 | Method          | Matching Pairs | Matched Accuracy |
 |-----------------|----------------|------------------|
@@ -122,6 +116,7 @@ python train.py --feature_dim 256 --dataset_offline_rebuild 1 --batch_size 32 --
 | SIFT            | 15             | 40%              |
 | A-KAZE          | 19             | 68.42%           |
 
+---
 ##Acknowledgments
 
 This work is built upon:
@@ -131,6 +126,8 @@ SuperPoint
 SuperGlue
 
 Thanks to the original authors for their contributions.
+
+---
 
 📬 Contact
 
