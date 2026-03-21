@@ -50,7 +50,7 @@ https://github.com/RouteViewLab/A-Hausdorff-Guided-Deep-Learning-Approach-for-Mo
 
 ### 📈 Quantitative Analysis
 
-![HD vs Rotation Angle](./assets/hd_rotation_curve.png)
+![HD vs Rotation Angle](https://github.com/RouteViewLab/A-Hausdorff-Guided-Deep-Learning-Approach-for-Monitoring-the-Motion-of-Rotating-Arctic-Ice-Floes/raw/main/Rotation Comparison Chart.png)
 
 This figure shows the variation of **Hausdorff Distance (HD)** with respect to rotation angle for ice floe **B2**.
 
@@ -65,7 +65,7 @@ Rotation drastically alters geometric similarity, making direct matching unrelia
 
 ### 🖼️ Qualitative Comparison
 
-![Rotation Comparison](./assets/rotation_comparison.png)
+![Rotation Comparison](https://github.com/RouteViewLab/A-Hausdorff-Guided-Deep-Learning-Approach-for-Monitoring-the-Motion-of-Rotating-Arctic-Ice-Floes/raw/main/Variation of Hausdorff Distance with Rotation Angle.png)
 
 #### 🔹 Before Rotation Alignment
 - Feature matches are **disordered and inconsistent**  
@@ -76,16 +76,6 @@ Rotation drastically alters geometric similarity, making direct matching unrelia
 - Ice floe is **well aligned**  
 - Matches become **structured and reliable**  
 - Significant improvement in accuracy  
-
----
-
-### 💡 Key Finding
-
-This experiment verifies that:
-
-> **Ignoring rotation leads to severe degradation in feature matching performance.**
-
-Thus, rotation-aware modeling is essential for robust ice floe motion monitoring.
 
 ---
 
@@ -123,12 +113,16 @@ python train4.py train_joint configs/superpoint_dataset_train_heatmap.yaml super
 
 python train.py --feature_dim 256 --dataset_offline_rebuild 1 --batch_size 32 --eval
 
-📊 Results
-Method	Matching Pairs	Accuracy
-Proposed method	50	100%
-SIFT	15	40%
-A-KAZE	19	68.42%
-🙏 Acknowledgments
+
+  ## Results
+
+| Method          | Matching Pairs | Matched Accuracy |
+|-----------------|----------------|------------------|
+| Proposed method | 50             | 100%             |
+| SIFT            | 15             | 40%              |
+| A-KAZE          | 19             | 68.42%           |
+
+##Acknowledgments
 
 This work is built upon:
 
