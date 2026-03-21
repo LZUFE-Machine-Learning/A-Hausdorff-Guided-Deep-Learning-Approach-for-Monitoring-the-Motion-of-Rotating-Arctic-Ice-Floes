@@ -99,14 +99,17 @@ Key advantages:
 
 ## 🏋️ Training
 
-```bash
+
 python train4.py train_base configs/magicpoint_shapes_pair.yaml magicpoint_synth --eval
 
 python train4.py train_joint configs/superpoint_dataset_train_heatmap.yaml superpoint_my_data --eval --debug
 
 python train.py --feature_dim 256 --dataset_offline_rebuild 1 --batch_size 32 --eval
 
+
 ---
+
+
 ## Results
 
 | Method          | Matching Pairs | Matched Accuracy |
@@ -126,9 +129,11 @@ SuperGlue
 
 Thanks to the original authors for their contributions.
 
+
 ---
 
-📬 Contact
+
+## 📬 Contact
 
 If you have any questions:
 
